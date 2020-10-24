@@ -7,3 +7,84 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: '';
+	clear: both;
+	height: 0;
+}
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Nova Flat', cursive;
+  color: #186684;
+}
+p {
+  font-family: 'Catamaran', sans-serif; /* might have to add colour */
+  font-size: 2rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h2 {
+  font-size: 4.2rem;
+}
+.wrapper {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* HEADER styles */
+header {
+  background-image: url(./assets/image-1@2x.png);
+	min-height: 90vh;
+	background-size: cover;
+	background-position: center;
+	padding: 25px 0;
+}
+nav {
+  width: 35%;
+  margin: 0 auto;
+}
+nav li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+nav a:hover,
+nav a:focus {
+  color: #E85B26;
+}
+nav a {
+  padding: 10px;
+  width: 100%;
+}
+h1 {
+  font-size: 11rem;
+  width: 450px;
+  margin: 30% auto 0 40%;
+  padding: 10px;
+  background-color: rgba(227, 228, 234, 0.9)
+}
+
