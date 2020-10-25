@@ -90,8 +90,10 @@ h1 {
 
 /* MAIN styles */
 /* MAIN global */
+main h2 {
+  padding-bottom: 10px;
+}
 main p {
-  padding-bottom: 20px;
   line-height: 2.9rem;
 }
 main a {
@@ -102,20 +104,21 @@ main a {
 }
 
 /* MAIN introduction section */
+.introduction p {
+  padding-bottom: 25px;
+}
 .introduction .textContainer,
 .introduction .imgContainer {
   width: 50%;
   float: left;
 }
 .introHalf .textContainer {
-  margin: 10% 10% 0 10%;
-  width: 30%;
+  margin: 10% 5% 0 8%;
+  width: 37%;
 }
 .introHalf:nth-child(2) .textContainer {
+  margin: 10% 8% 0 5%;
   float: right;
-}
-.textContainer {
-  width: 50%;
 }
 
 /* MAIN community section */
@@ -123,12 +126,19 @@ main a {
   background-color: #F4F4F4;
   padding: 80px 0;
 }
+.givingBackContainer .wrapper {
+  position: relative; /* used this to stick READ MORE a tags to bottom */
+}
+.givingBackContainer a {
+  position: absolute;
+  bottom: 0;
+}
 .givingBackContainer .imgContainer {
-  width: 25%;
+  width: 30%;
   float: left;
 }
-.givingBack {
-  width: 72%;
+.givingBack { /* this is text section, next to the image */
+  width: 67%;
   margin-left: 3%;
   float: left;
 }
@@ -165,14 +175,13 @@ main a {
   font-size: 3rem;
   font-family: 'Catamaran', sans-serif;
   font-weight: 600;
-  
 }
 
 /* MAIN the gram section */
 .theGram {
   margin: 70px 0;
 }
-.theGram .wrapper h2 {
+.theGram h2 {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -251,12 +260,93 @@ footer p {
 
 @media(max-width: 1280px){
   .introduction .introHalf .textContainer {
-    margin: 5% 5% 0 5%;
-    width: 40%;
+    margin: 3% 4% 0 4%;
+    width: 42%;
+  }
+  .givingBackContainer a {
+    position: static;
+  }
+  .givingBackContainer p {
+    padding-bottom: 20px;
+  }
+  .displayContainer {
+    width: 70%;
+  }
+  .newsletter input {
+    padding-right: 175px;
   }
 }
 @media(max-width: 940px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+  p, a {
+    font-size: 1.7rem;
+  }
 
+  /* HEADER styles */
+  nav {
+    width: 50%;
+  }
+  h1 {
+    font-size: 8rem;
+    width: 330px;
+    margin: 35% auto 0 40%;
+  }
+
+  /* MAIN styles */
+  main a {
+    font-size: 1.7rem;
+  }
+  .introduction h2 {
+    padding-bottom: 5px;
+  }
+  .introduction p {
+    padding-bottom: 20px;
+  }
+  .introduction .introHalf .textContainer {
+    margin: 1.5% 2% 0 2%;
+    width: 46%;
+  }
+  .communityDisplay h3 {
+    font-size: 2.2rem;
+  }
+  .display {
+    margin-top: 80px;
+  }
+  .displayContainer {
+    height: 50%;
+  }
+  .display i {
+    font-size: 4rem;
+  }
+  .theGram {
+    margin-top: 50px;
+  }
+  .theGram h2 {
+    margin-bottom: 30px;
+  } 
+
+  /* FOOTER styles */
+  footer {
+    padding-top: 50px;
+  }
+  .footerLinks {
+    width: 50%;
+  }
+  .footerContent {
+    margin-bottom: 50px;
+  }
+  footer h3 {
+    font-size: 3.2rem;
+  }
+  .newsletter input {
+    padding-right: 50px;
+  } 
+  .newsletter input,
+  .newsletter button {
+    font-size: 1.6rem;
+  }
 }
 @media(max-width: 768px) {
 
