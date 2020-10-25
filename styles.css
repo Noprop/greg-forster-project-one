@@ -90,20 +90,17 @@ h1 {
 
 /* MAIN styles */
 /* introduction section */
-.introduction .introHalf {
-  
+.introduction .textContainer,
+.introduction .imgContainer {
+  width: 50%;
+  float: left;
 }
-.introduction .introHalf:nth-child(1) {
-  background-image: url(./assets/image-2_2@2x.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right;
+.introHalf .textContainer {
+  margin: 10% 10% 0 10%;
+  width: 30%;
 }
-.introduction .introHalf:nth-child(2) {
-  background-image: url(./assets/image-2-copy@2x.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: left;
+.introHalf:nth-child(2) .textContainer {
+  float: right;
 }
 .textContainer {
   width: 50%;
@@ -112,7 +109,7 @@ h1 {
 /* community section */
 .givingBackContainer {
   background-color: #F4F4F4;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 .givingBackContainer .imgContainer {
   width: 25%;
@@ -122,4 +119,47 @@ h1 {
   width: 72%;
   margin-left: 3%;
   float: left;
+}
+.communityDisplay {
+  background-image: url(./assets/image-5@2x.png);
+}
+
+
+/* the gram section */
+.theGram {
+  margin: 70px 0;
+}
+.theGram .wrapper h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.gramGallery .galleryImage {
+  float: left;
+  width: calc((100% - 40px) / 3);
+  margin-right: 20px;
+}
+.gramGallery .galleryImage:nth-child(3) {
+  margin-right: 0;
+}
+
+/* FOOTER styles */
+footer {
+  background-color: #F4F4F4;
+}
+
+
+@media(max-width: 1280px){
+  .introduction .introHalf .textContainer {
+    margin: 5% 5% 0 5%;
+    width: 40%;
+  }
+}
+@media(max-width: 940px) {
+
+}
+@media(max-width: 768px) {
+
+}
+@media(max-width: 480px) {
+
 }
