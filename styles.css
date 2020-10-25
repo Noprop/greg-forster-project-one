@@ -89,7 +89,19 @@ h1 {
 }
 
 /* MAIN styles */
-/* introduction section */
+/* MAIN global */
+main p {
+  padding-bottom: 20px;
+  line-height: 2.9rem;
+}
+main a {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border: 2px solid #E85B26;
+  padding: 10px;
+}
+
+/* MAIN introduction section */
 .introduction .textContainer,
 .introduction .imgContainer {
   width: 50%;
@@ -106,7 +118,7 @@ h1 {
   width: 50%;
 }
 
-/* community section */
+/* MAIN community section */
 .givingBackContainer {
   background-color: #F4F4F4;
   padding: 80px 0;
@@ -123,17 +135,40 @@ h1 {
 .communityDisplay {
   background-image: url(./assets/image-5@2x.png);
   height: 500px;
-  background-image: cover;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .displayContainer {
+  position: absolute;
   background-color: #F4F4F4;
-  width: 60%;
+  width: 50%;
   height: 60%;
-  margin: 10% auto 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  /* the above is a pretty fun way to center */
+}
+.display {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+  margin-top: 100px;
+}
+.display i {
+  font-size: 5rem;
+  color: #E85B26;
+  margin-bottom: 20px;
+}
+.display h3 {
+  font-size: 3rem;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  
 }
 
-/* the gram section */
+/* MAIN the gram section */
 .theGram {
   margin: 70px 0;
 }
