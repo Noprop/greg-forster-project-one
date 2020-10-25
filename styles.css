@@ -51,7 +51,7 @@ h2 {
 }
 .wrapper {
   max-width: 1280px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -88,3 +88,38 @@ h1 {
   background-color: rgba(227, 228, 234, 0.9)
 }
 
+/* MAIN styles */
+/* introduction section */
+.introduction .introHalf {
+  
+}
+.introduction .introHalf:nth-child(1) {
+  background-image: url(./assets/image-2_2@2x.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
+}
+.introduction .introHalf:nth-child(2) {
+  background-image: url(./assets/image-2-copy@2x.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left;
+}
+.textContainer {
+  width: 50%;
+}
+
+/* community section */
+.givingBackContainer {
+  background-color: #F4F4F4;
+  padding: 100px 0;
+}
+.givingBackContainer .imgContainer {
+  width: 25%;
+  float: left;
+}
+.givingBack {
+  width: 72%;
+  margin-left: 3%;
+  float: left;
+}
