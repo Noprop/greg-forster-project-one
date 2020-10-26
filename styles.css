@@ -63,7 +63,8 @@ header {
 	min-height: 90vh;
 	background-size: cover;
 	background-position: center;
-	padding: 25px 0;
+  padding: 25px 0;
+  position: relative;
 }
 nav {
   width: 35%;
@@ -87,6 +88,20 @@ h1 {
   margin: 25% auto 0 40%;
   padding: 10px;
   background-color: rgba(227, 228, 234, 0.9);
+}
+.desktopSocials {
+  position: absolute;
+  width: 10%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.desktopSocials a i {
+  color: #E85B26;
+  font-size: 3.6rem;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 /* MAIN styles */
@@ -266,6 +281,9 @@ footer p {
 }
 
 @media(max-width: 1280px){
+  .desktopSocials a i {
+    font-size: 3rem;
+  }
   .introduction .introHalf .textContainer { 
     margin: 3% 4% 0 4%;
     width: 42%;
@@ -367,6 +385,9 @@ footer p {
     width: 95%;
   }
   /* HEADER styles */
+  .desktopSocials {
+    display: none;
+  }
   header {
     background-position: 32%;
   }
