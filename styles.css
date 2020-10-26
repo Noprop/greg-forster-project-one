@@ -70,6 +70,12 @@ nav {
   width: 35%;
   margin: 0 auto;
 }
+nav input {
+  display: none;
+}
+nav i {
+  opacity: 0;
+}
 nav li {
   float: left;
   width: 25%;
@@ -273,6 +279,7 @@ footer p {
 
 /* copyright */
 .copyright {
+  padding-top: 5px;
   background-color: #1F2022;
   text-align: center;
 }
@@ -385,6 +392,8 @@ footer p {
     width: 95%;
   }
   /* HEADER styles */
+
+
   .desktopSocials {
     display: none;
   }
@@ -477,6 +486,58 @@ footer p {
     text-align: center;
     margin-top: 10px;
   }
+
+  /* NAV hamburger menu */
+  /* design from here: https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 */
+  nav {
+    width: 100%;
+  }
+  .collapsibleMenu {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+  }
+  .collapsibleMenu input,
+  .collapsibleMenu i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .collapsibleMenu i {
+    opacity: 1;
+  }
+  .collapsibleMenu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+
+    cursor: pointer;
+    opacity: 0; /* hides the checkbox */
+    z-index: 2; /* places it over the hamburger menu */
+  }
+  .collapsibleMenu i {
+    display: block;
+    z-index: 1;
+    font-size: 4rem;
+  }
+  .menuContent {
+    background-color: #e3e4ea;
+    position: absolute;
+    padding: 100px 50px 50px 50px;
+    top: -25px;
+    right: -5000px;
+  }
+  #menu:checked ~ .menuContent {
+    right: -25px;
+  }
+  .menuContent li {
+    float: none;
+    width: 100%;
+    padding: 10px;
+  }
+
 }
 @media(max-width: 480px) {
   h1 {
