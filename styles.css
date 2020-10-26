@@ -248,6 +248,7 @@ footer p {
   font-size: 2rem;
 }
 .newsletter button {
+  font-family: 'Nova Flat', cursive;
   padding: 12px;
   background-color: #186684;
   color: white;
@@ -267,7 +268,7 @@ footer p {
     width: 42%;
   }
   .givingBackContainer a {
-    position: static;
+    position: initial;
   }
   .givingBackContainer p {
     padding-bottom: 20px;
@@ -362,6 +363,15 @@ footer p {
   .wrapper {
     width: 95%;
   }
+  /* HEADER styles */
+  header {
+    background-position: 32%;
+  }
+  h1 {
+    font-size: 7rem;
+    width: 285px;
+    margin: 360px 0 0 25%;
+  }
   /* MAIN styles */
   .introduction .introHalf .textContainer,
   .introduction .introHalf .imgContainer {
@@ -381,26 +391,74 @@ footer p {
     margin: 30px 2.5% 40px 2.5%;
     width: 95%;
   }
-
-
-
-  /* .introduction p {
-  padding-bottom: 25px;
-}
-.introduction .textContainer,
-.introduction .imgContainer {
-  width: 50%;
-  float: left;
-}
-.introHalf .textContainer {
-  margin: 10% 5% 0 8%;
-  width: 37%;
-}
-.introHalf:nth-child(2) .textContainer {
-  margin: 10% 8% 0 5%;
-  float: right;
-} */
+  .givingBackContainer {
+    padding: 50px 0;
+  }
+  .givingBackContainer .imgContainer {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .givingBackContainer .imgContainer img {
+    position: absolute;
+    bottom: -60px;
+  }
+  .givingBackContainer .givingBack {
+    width: 100%;
+    margin: 0;
+  }
+  .givingBack a {
+    position: absolute;
+    padding: 10px 45px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  .displayContainer {
+    height: 80%;
+  }
+  .displayContainer .display {
+    flex: none;
+    width: 100%;
+    margin-top: 35px;
+  }
+  /* GRAM styles */
+  .gramGallery .galleryImage {
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+  }
+  .gramGallery .galleryImage:nth-child(2) {
+    margin-right: 0;
+  }
+  .gramGallery .galleryImage:nth-child(3) {
+    display: none;
+  }
+  /* FOOTER styles */
+  .footerLinks {
+    width: 100%;
+  }
+  .footerContent .contact,
+  .footerContent .newsletter {
+    width: 100%;
+  }
+  .footerContent .contact {
+    margin-bottom: 40px;
+  }
+  .newsletter input,
+  .newsletter button {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 @media(max-width: 480px) {
-
+  .givingBackContainer .imgContainer img {
+    max-height: 460px;                              /* might need to change max height!! */
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
 }
