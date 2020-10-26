@@ -113,11 +113,14 @@ main a {
   float: left;
 }
 .introHalf .textContainer {
-  margin: 10% 5% 0 8%;
+  margin: 10% 8% 0 5%;
   width: 37%;
 }
-.introHalf:nth-child(2) .textContainer {
-  margin: 10% 8% 0 5%;
+.introHalf:nth-child(1) .textContainer {
+  margin: 10% 5% 0 8%;
+  float: left;
+}
+.introHalf:nth-child(1) .imgContainer {
   float: right;
 }
 
@@ -259,7 +262,7 @@ footer p {
 }
 
 @media(max-width: 1280px){
-  .introduction .introHalf .textContainer {
+  .introduction .introHalf .textContainer { 
     margin: 3% 4% 0 4%;
     width: 42%;
   }
@@ -277,6 +280,7 @@ footer p {
   }
 }
 @media(max-width: 940px) {
+  /* GLOBAL styles */
   h2 {
     font-size: 3.2rem;
   }
@@ -349,7 +353,53 @@ footer p {
   }
 }
 @media(max-width: 768px) {
+  /* GLOBAL styles */
+  .introduction,
+  h2,
+  footer {
+    text-align: center;
+  } 
+  .wrapper {
+    width: 95%;
+  }
+  /* MAIN styles */
+  .introduction .introHalf .textContainer,
+  .introduction .introHalf .imgContainer {
+    width: 100%;
+  }
+  .introduction .imgContainer {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  .introduction img {
+    margin: auto;
+    position: absolute;
+    bottom: -40px;
+  }
+  .introduction .introHalf .textContainer {
+    margin: 30px 2.5% 40px 2.5%;
+    width: 95%;
+  }
 
+
+
+  /* .introduction p {
+  padding-bottom: 25px;
+}
+.introduction .textContainer,
+.introduction .imgContainer {
+  width: 50%;
+  float: left;
+}
+.introHalf .textContainer {
+  margin: 10% 5% 0 8%;
+  width: 37%;
+}
+.introHalf:nth-child(2) .textContainer {
+  margin: 10% 8% 0 5%;
+  float: right;
+} */
 }
 @media(max-width: 480px) {
 
