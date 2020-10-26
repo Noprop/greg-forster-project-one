@@ -33,6 +33,7 @@ body {
 p {
   font-family: 'Catamaran', sans-serif; /* might have to add colour */
   font-size: 2rem;
+  color: #1F2022;
 }
 ul {
   list-style: none;
@@ -258,8 +259,10 @@ footer p {
 /* copyright */
 .copyright {
   background-color: #1F2022;
-  color: #e3e4ea;
   text-align: center;
+}
+.copyright p {
+  color: #e3e4ea;
 }
 
 @media(max-width: 1280px){
@@ -392,7 +395,7 @@ footer p {
     width: 95%;
   }
   .givingBackContainer {
-    padding: 50px 0;
+    padding: 10% 0;
   }
   .givingBackContainer .imgContainer {
     width: 100%;
@@ -455,10 +458,28 @@ footer p {
   }
 }
 @media(max-width: 480px) {
-  .givingBackContainer .imgContainer img {
-    max-height: 460px;                              /* might need to change max height!! */
-    max-width: 100%;
-    height: auto;
-    width: auto;
+  h1 {
+    margin-left: 10%;
+  }
+  .introduction h2 {
+    padding-bottom: 10px;
+  }
+  .introduction p {
+    padding-bottom: 30px;
+  }
+  .givingBack p {
+    padding-bottom: 25px;
+  }
+  .introduction img {
+    bottom: 0px;
+  }
+  .givingBackContainer {
+    padding-bottom: 60px;
+  }
+  .givingBack a {
+    padding: 10px 30px;
+  }
+  footer h3 {
+    font-size: 2.4rem;
   }
 }
